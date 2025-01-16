@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import { Greetings } from './components/Greetings'
-import Portfolio from './components/Portfolio'
+import { Portfolio } from './components/Portfolio'
 
 function App() {
-  const [content, setContent] = useState('home')
-
+  const [content, setContent] = useState('portfolio')
   switch (content) {
     case 'home':
       return (
