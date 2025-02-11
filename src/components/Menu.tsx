@@ -3,7 +3,7 @@ import { Button } from "./ui/Button";
 import '../assets/Menu.css'
 
 interface MenuProps {
-    navigateTo: Function;
+    navigateTo: (param: string) => void;
 }
 
 export const Menu = ({ navigateTo }: MenuProps) => {

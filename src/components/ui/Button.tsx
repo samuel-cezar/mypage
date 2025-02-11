@@ -8,10 +8,11 @@ interface ButtonProps {
 export const Button = ({ textContent, onTap }: ButtonProps) => {
     return (
         <motion.button
-        onClick={() => onTap()}
+            style={{ borderRadius: '0px' }}
+            onClick={() => onTap()}
             initial={false}
             whileHover={{
-                backgroundColor: '#999',
+                backgroundColor: '#fffbff',
                 color: '#333',
                 border: '1px solid #333',
                 transition: { duration: 0.2 },

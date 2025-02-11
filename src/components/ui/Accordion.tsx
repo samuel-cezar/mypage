@@ -14,7 +14,7 @@ export const Accordion = ({ title, content, themeColor }: AccordionProps) => {
         <>
             <motion.header
                 initial={false}
-                animate={{ backgroundColor: isOpen ? "#444444" : "#919191" }}
+                animate={{ backgroundColor: isOpen ? "#444444" : themeColor }}
                 onClick={() => setIsOpen(!isOpen)}
                 style={{ padding: "0.5em", cursor: "pointer", color: "white" }}
             >
@@ -34,7 +34,7 @@ export const Accordion = ({ title, content, themeColor }: AccordionProps) => {
                         transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
                         style={{ overflow: "hidden" }}
                     >
-                        <div style={{ padding: "0.5em 0.2em 0.2em 0.2em", backgroundColor: "#b7b7b7" }}>
+                        <div style={{ padding: "0.5em 0.2em 0.2em 0.2em", backgroundColor: "#dddddd" }}>
                             {content}
                         </div>
                     </motion.section>
